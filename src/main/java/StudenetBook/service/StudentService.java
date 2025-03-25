@@ -4,7 +4,8 @@ import StudenetBook.dto.StudentDTO;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.time.LocalDate;
+
+import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
@@ -14,11 +15,11 @@ public class StudentService {
 
     public StudentService(){
         StudentDTO dto1 = new StudentDTO();
-        dto1.setId(UUID.randomUUID().toString());
+        dto1.setId("e4e34cb7-957e-4304-abf2-ef2d4d7d8171");
         dto1.setName("John");
         dto1.setSurname("Smith");
         dto1.setPhone(99891);
-        dto1.setDateOfBirth("2003-03-22");
+        dto1.setCreatedDate("2021-06-25");
         studentList.add(dto1);
 
         //---------
@@ -28,7 +29,7 @@ public class StudentService {
         dto2.setName("Valish");
         dto2.setSurname("Valishov");
         dto2.setPhone(99891);
-        dto2.setDateOfBirth("2003-03-22");
+        dto2.setCreatedDate("2024-06-15");
         studentList.add(dto2);
 
         //------
@@ -38,7 +39,7 @@ public class StudentService {
         dto3.setName("Alish");
         dto3.setSurname("Alishov");
         dto3.setPhone(99891);
-        dto3.setDateOfBirth("2003-03-22");
+        dto3.setCreatedDate("2023-04-25");
         studentList.add(dto3);
     }
     public List<StudentDTO> getStudentAll() {
@@ -61,6 +62,7 @@ public class StudentService {
         validate(dto);
 
         dto.setId(UUID.randomUUID().toString());
+//        dto.setCreatedDate(LocalDateTime.now());
         studentList.add(dto);
         return dto;
     }
@@ -74,7 +76,6 @@ public class StudentService {
         exist.setName(dto.getName());
         exist.setSurname(dto.getSurname());
         exist.setPhone(dto.getPhone());
-        exist.setDateOfBirth(dto.getDateOfBirth());
 
         return true;
     }

@@ -14,7 +14,7 @@ public class BookService {
     private List<BookDTO> bookList = new LinkedList<>();
     public BookService() {
         BookDTO dto1 = new BookDTO();
-        dto1.setId(UUID.randomUUID().toString());
+        dto1.setId("9fdb9147-395f-4340-ab8e-2316eb57c6b8");
         dto1.setTitle("Title 1");
         dto1.setAuthor("Author 1");
         dto1.setPublisher(LocalDate.of(1991, 1,12));

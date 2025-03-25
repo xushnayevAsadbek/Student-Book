@@ -8,8 +8,7 @@ Content-Type: application/json
 {
   "name": "Valish",
   "surname": "Valishov",
-  "phone" : 99891003,
-  "dateOfBirth": "2024-0622"
+  "phone" : 99891003
 }
 
 ### Update Student
@@ -19,8 +18,7 @@ Content-Type: application/json
 {
   "name": "Toshmat",
   "surname": "Valishov",
-  "phone" : 99891003,
-  "dateOfBirth": "2024-0622"
+  "phone" : 99891003
 }
 
 ### By id
@@ -33,6 +31,6 @@ Content-Type: application/json
 {
   "name": "Toshmat",
   "surname": "Valishov",
-  "phone" : 99891003,
-  "dateOfBirth": "2024-0622"
+  "phone" : 99891003
+
 }

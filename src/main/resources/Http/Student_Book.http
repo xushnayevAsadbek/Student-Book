@@ -1,0 +1,17 @@
+### Student_book create
+POST localhost:8080/student-book
+Content-Type: application/json
+
+{
+  "studentId": "439a6c39-c8d4-4c59-bb35-775ccfa96606",
+  "bookId": "f4e07929-eda8-4374-9542-47a7c413d8c3"
+}
+
+### Student_Book update
+PUT localhost:8080/student-book/
+Content-Type: application/json
+
+{
+  "studentId": "e4e34cb7-957e-4304-abf2-ef2d4d7d8171",
+  "bookId": "9fdb9147-395f-4340-ab8e-2316eb57c6b8"
+}
