@@ -1,0 +1,38 @@
+### Get all
+GET localhost:8080/student/all
+
+### Student create
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "Valish",
+  "surname": "Valishov",
+  "phone" : 99891003,
+  "dateOfBirth": "2024-0622"
+}
+
+### Update Student
+PUT localhost:8080/student/update/ed8111e6-3aa4-4e44-b1f6-2ef7c0b30991
+Content-Type: application/json
+
+{
+  "name": "Toshmat",
+  "surname": "Valishov",
+  "phone" : 99891003,
+  "dateOfBirth": "2024-0622"
+}
+
+### By id
+GET localhost:8080/student/byid/600864a5-dec7-4fb7-91e6-c809e553f5a1
+
+### Delete
+DELETE localhost:8080/student/delete/ed8111e6-3aa4-4e44-b1f6-2ef7c0b30991
+Content-Type: application/json
+
+{
+  "name": "Toshmat",
+  "surname": "Valishov",
+  "phone" : 99891003,
+  "dateOfBirth": "2024-0622"
+}

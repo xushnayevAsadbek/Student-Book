@@ -1,0 +1,35 @@
+### Get all
+GET localhost:8080/book/
+
+### Book create
+POST localhost:8080/book
+Content-Type: application/json
+
+{
+  "title": "Title 11",
+  "author": "Author 11",
+  "publisher" : "2024-01-02"
+}
+
+### Update Book
+PUT localhost:8080/book/ed8111e6-3aa4-4e44-b1f6-2ef7c0b30991
+Content-Type: application/json
+
+{
+  "title": "Title 13",
+  "author": "Author 13",
+  "publisher" : "2024-01-02"
+}
+
+### By id book
+GET localhost:8080/book/byid/600864a5-dec7-4fb7-91e6-c809e553f5a1
+
+### Delete book
+DELETE localhost:8080/book/ed8111e6-3aa4-4e44-b1f6-2ef7c0b30991
+Content-Type: application/json
+
+{
+  "title": "Valish",
+  "author": "Valishov",
+  "publisher" :"2024-01-02"
+}
