@@ -53,4 +53,34 @@ public class StudentBookService {
         throw new IllegalArgumentException("Student_Book not found");
 
     }
+//    public StudentBookDTO booklist(StudentBookDTO dto){
+//        for (StudentBookDTO studentBook : studentBookList) {
+//           if (studentBook.getBookId().equals(dto.getBookId()) &&
+//                   studentBook.getStatus().equals(StudentBookStatus.TAKEN)){
+//               studentBook.setId(studentBook.getId());
+//               studentBook.setStudentId(dto.getStudentId());
+//               studentBook.setCreatedDate(studentBook.getCreatedDate());
+//               studentBook.setReturnedDate(studentBook.getReturnedDate());
+//               studentBook.setStatus(StudentBookStatus.TAKEN);
+//               return studentBook;
+//           }
+//        }
+//        throw new IllegalArgumentException("Student_Book not found");
+//    }
+
+    public List<StudentBookDTO> studentBooklist(){
+        return studentBookList;
+    }
+    public StudentBookDTO getStudentBookId(String id){
+        for (StudentBookDTO studentBook : studentBookList) {
+            if (studentBook.getId().equals(id)){
+                StudentDTO student = studentService.get(studentBook.getStudentId());
+                studentBook.setStudent(student);
+                BookDTO book = bookService.get(studentBook.getBookId());
+                studentBook.setBook(book);
+                return studentBook;
+            }
+        }
+        throw new IllegalArgumentException("Student_Book not found");
+    }
 }

@@ -21,5 +21,7 @@ public class StudentBookDTO {
     private LocalDateTime createdDate;
     private StudentBookStatus status;
     private LocalDateTime returnedDate;
+    private  StudentDTO student;
+    private BookDTO book;
 
 }

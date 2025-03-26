@@ -3,8 +3,8 @@ POST localhost:8080/student-book
 Content-Type: application/json
 
 {
-  "studentId": "439a6c39-c8d4-4c59-bb35-775ccfa96606",
-  "bookId": "f4e07929-eda8-4374-9542-47a7c413d8c3"
+  "studentId": "e4e34cb7-957e-4304-abf2-ef2d4d7d8171",
+  "bookId": "9fdb9147-395f-4340-ab8e-2316eb57c6b8"
 }
 
 ### Student_Book update
@@ -15,3 +15,9 @@ Content-Type: application/json
   "studentId": "e4e34cb7-957e-4304-abf2-ef2d4d7d8171",
   "bookId": "9fdb9147-395f-4340-ab8e-2316eb57c6b8"
 }
+
+### Student_Book list
+GET localhost:8080/student-book
+
+### Student_Book byId
+GET localhost:8080/student-book/9c2899ff-81b5-4410-9cd7-fe2aea40b4b6
